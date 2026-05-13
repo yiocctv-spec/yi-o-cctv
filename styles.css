@@ -1,0 +1,260 @@
+/* Yi O CCTV — Shared Stylesheet */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #1a1a1a;
+  background: #ebebeb;
+}
+
+a { color: #1a5fa8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { display: block; max-width: 100%; height: auto; }
+
+/* ── Header ── */
+.site-header {
+  background: linear-gradient(180deg, #002b3d 0%, #014433 100%);
+  color: #f0f0f0;
+}
+.header-top {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 12px 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-logos img {
+  height: 56px;
+  width: auto;
+}
+.header-org {
+  font-size: 12px;
+  line-height: 1.3;
+  color: #cce8e0;
+}
+.header-org strong { display: block; font-size: 18px; color: #fff; }
+.header-lang {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  align-self: flex-start;
+  padding-top: 4px;
+}
+.header-lang a { color: #cce8e0; }
+.header-lang a:hover { color: #fff; text-decoration: underline; }
+.header-lang .active { color: #fff; font-weight: 600; pointer-events: none; text-decoration: none; }
+.header-title-bar {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px 20px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-title-bar .site-name {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+.back-link {
+  font-size: 13px;
+  color: #cce8e0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.back-link:hover { color: #fff; text-decoration: underline; }
+
+/* ── Page wrapper ── */
+.page-body {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+/* ── Content card ── */
+.content-card {
+  background: #f9f9f9;
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  padding: 32px 36px 40px;
+  margin-bottom: 32px;
+}
+
+.content-card h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 14px;
+}
+
+.content-card h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 22px 0 6px;
+  color: #1a1a1a;
+}
+
+.content-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 16px 0 4px;
+}
+
+.content-card p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.content-card ol {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.content-card ol li {
+  font-size: 14px;
+  padding-left: 1.2em;
+  position: relative;
+  margin-bottom: 4px;
+}
+.content-card ol li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #444;
+}
+
+.content-card ul {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.content-card ul li {
+  font-size: 14px;
+  padding-left: 1.2em;
+  position: relative;
+  margin-bottom: 4px;
+}
+.content-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #444;
+}
+
+.bold-term { font-weight: 700; }
+.italic-term { font-style: italic; font-weight: 700; }
+.link-style { color: #1a5fa8; }
+
+/* Main page intro text */
+.intro-text { font-size: 14px; margin-bottom: 12px; }
+
+/* Section headings (main page blue headings) */
+.section-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f4c81;
+  margin: 28px 0 10px;
+}
+
+/* CCTV comparison table */
+.cctv-table-wrap { overflow-x: auto; margin: 16px 0; }
+.cctv-table {
+  border-collapse: collapse;
+  min-width: 400px;
+  width: 100%;
+  font-size: 13px;
+}
+.cctv-table th, .cctv-table td {
+  border: 1px solid #c8c8c8;
+  padding: 8px 12px;
+  text-align: center;
+}
+.cctv-table thead th {
+  background: #f4cdc8;
+  font-weight: 600;
+}
+.cctv-table tbody tr:nth-child(odd) { background: #fff; }
+.cctv-table tbody tr:nth-child(even) { background: #fdf3f2; }
+
+.table-notes { font-size: 12px; color: #555; margin-top: 8px; }
+.table-notes p { margin-bottom: 2px; }
+
+/* CCTV in Operation sign */
+.cctv-sign-wrap { margin: 18px auto; max-width: 280px; }
+.cctv-sign-wrap img { border: 1px solid #ccc; border-radius: 4px; }
+
+/* Privacy button */
+.privacy-btn {
+  display: inline-block;
+  background: #3366aa;
+  color: #fff;
+  font-size: 12px;
+  padding: 7px 14px;
+  border-radius: 3px;
+  margin-top: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+.privacy-btn:hover { background: #214d8a; text-decoration: none; }
+
+/* ── Contact / Footer section ── */
+.contact-section { margin-top: 8px; }
+.contact-heading { font-size: 22px; font-weight: 700; color: #0f4c81; margin-bottom: 12px; }
+.contact-sub-heading { font-size: 15px; font-weight: 600; margin-bottom: 12px; }
+
+.contact-table-wrap {
+  background: #1e3a6e;
+  color: #f0f0f0;
+  border-radius: 4px;
+  padding: 16px 20px 20px;
+  max-width: 680px;
+}
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.contact-table th,
+.contact-table td {
+  padding: 6px 8px;
+  vertical-align: top;
+}
+.contact-table thead th {
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  padding-bottom: 8px;
+}
+.contact-table .location-name { font-weight: 600; }
+.contact-table .location-addr { font-size: 12px; opacity: 0.85; }
+.contact-table .opening-hours { font-size: 12px; opacity: 0.75; }
+
+.emergency-line { font-size: 16px; font-weight: 700; margin-top: 20px; }
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .content-card { padding: 18px 16px 24px; }
+  .contact-table-wrap { padding: 12px 12px 16px; }
+  .header-org { display: none; }
+}
