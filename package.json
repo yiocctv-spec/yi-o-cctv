@@ -1,0 +1,23 @@
+{
+  "name": "yi-o-cctv",
+  "version": "1.0.0",
+  "description": "A static HTML/CSS website for the Yi O CCTV Digital Policing Pilot Scheme (Lantau District, Hong Kong Police Force).",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yiocctv-spec/yi-o-cctv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yiocctv-spec/yi-o-cctv/issues"
+  },
+  "homepage": "https://github.com/yiocctv-spec/yi-o-cctv#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
